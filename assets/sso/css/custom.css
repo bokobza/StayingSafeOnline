@@ -93,10 +93,7 @@
 #msg-box1-0 H3 {
   color: #ffffff;
 }
-#social-buttons1-0 .mbr-section-title {
-  font-size: 20px;
-  color: #ffffff;
-}
+
 #footer1-2 P {
   color: #ffffff;
 }
@@ -121,13 +118,15 @@
     margin-bottom: 50px;
 }
 
-.resource-item h3 {
+.mbr-section .resource-item h3 {
   margin-bottom: 0; 
+    text-align: left;
 }
 
 .resource-item h3 a {  
   color: #ffffff;
   font-size: 1.2rem;
+    
 }
 
 .resource-item .resource-link {
@@ -142,14 +141,6 @@
   font-size: 14px;
 }
 
-/* For-* sections */
-.mbr-section .mbr-section-title,
-.mbr-section .lead p {
-  color: #fff;
-}
-.mbr-section .lead P {
-  font-size: 20px;
-}
 
 .card-text {
     color: #000000;
@@ -175,6 +166,19 @@
     padding-top: 80px;
 }
 
+.mbr-section {
+    padding-top: 100px; 
+    padding-bottom: 50px;    
+}
+
+.mbr-section h3 {
+   text-align: center;
+}
+
+.mbr-section .lead P {
+  font-size: 20px;
+}
+
 #mission-section {
     background-color: rgb(40, 40, 40);
 }
@@ -184,10 +188,8 @@
     padding-bottom: 50px;
 }
 
-#mission-section h3 {
-    text-align: center;
-    color: white;
-    padding-top: 80px;
+#mission-section h3 {    
+    color: #ffffff;    
 }
 
 #mission-section H4 {
@@ -231,13 +233,12 @@
 }
 
 #streams-section {
+    padding-top: 0;
     background-color: rgb(255, 255, 255);
 }
 
-#social-buttons1-0 {
-    background-color: rgb(40, 40, 40); 
-    padding-top: 60px; 
-    padding-bottom: 30px;
+#contact-section {
+    background-color: rgb(40, 40, 40);    
 }
 
 #footer1-2 {
@@ -272,4 +273,65 @@
 #main-intro a:hover, #header-section a:hover {
     color: #e1a90f;
     text-decoration: none;
-       }
+}
+
+/*
+CONTACT
+*/
+
+
+#contact-section h3 {
+  color: #000000;
+}
+
+#contact-section {
+    background: #fff;   
+}
+
+#contact-section .col-sm-6 {
+    text-align: left;
+}
+
+#contact-section .input-group {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    padding-top: 50px;
+}
+
+#contact-success, #contact-error {
+    display: none;
+    margin-top: 24px;
+}
+
+.mbr-social-likes {
+    padding-top: 50px;
+}
+
+.btn-social {
+    color: #000000;
+}
+
+.form-control {
+    box-shadow: none;
+    border: none;
+    background: #ecf0f1;
+}
+
+    .form-control:focus {
+        box-shadow: none;
+        border: none;
+    }
+
+.input-group-addon {
+    box-shadow: none;
+    border: none;
+    background: #ecf0f1;
+  
+}
+
+ .btn:focus {
+        outline: none;
+        color: #ecf0f1;
+    }

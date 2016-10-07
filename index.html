@@ -68,7 +68,7 @@ Don't wait until you get hacked to learn about online safety!">
                             </li>
                             <li class="nav-item"><a class="nav-link link" href="index.html#mission-section">MISSION</a></li>
                             
-                            <li class="nav-item"><a class="nav-link link" href="index.html#social-buttons1-0">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="index.html#contact-section">CONTACT</a></li>
                             <li class="nav-item"><a class="nav-link link" href="resources.html">RESOURCES</a></li>
                         </ul>
                         <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -231,12 +231,38 @@ Don't wait until you get hacked to learn about online safety!">
     </section>
     
    
-    <section class="mbr-section mbr-section-md-padding" id="social-buttons1-0">
-
+    <section class="mbr-section mbr-section-md-padding" id="contact-section">
+<h3 class="mbr-section-title display-2">Contact us</h3>
         <div class="container">
             <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    
+                    <form action="https://formspree.io/jeremy@stayingsafe.online" method="post" id="contact-form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" id="contactName" name="name" placeholder="Your Name (optional)">
+                        </div>
+                        
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Your Email" data-validate="validate(required, email)">
+                        </div>
+                        
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                            <textarea class="form-control" id="contactMessage" name="message" placeholder="Your Message" rows="5" data-validate="validate(rangelength(1, 1000))"></textarea>
+                        </div>
+                        
+                        <input type="submit" class="btn btn-warning btn-lg btn-block" id="contact-form-submit" name="contact-form-submit" value="Send">
+                        <div class="alert alert-success" id="contact-success"></div>
+                        <div class="alert alert-danger" id="contact-error"></div>
+                    </form>
+                </div> <!-- end col-sm-6 -->
+            </div>
+            
+            <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-xs-center">
-                    <h3 class="mbr-section-title display-2">jeremy@stayingsafe.online</h3>
+                   
                     <div>
                         <div class="mbr-social-likes" data-url="http://stayingsafe.online" data-counters="false">
                             <span class="btn btn-social facebook" title="Share link on Facebook">
@@ -256,6 +282,7 @@ Don't wait until you get hacked to learn about online safety!">
             </div>
         </div>
     </section>
+    
     <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2">
 
         <div class="container">
